@@ -3,11 +3,11 @@ package routers
 import (
 	"html/template"
 
+	paginate "github.com/TimothyYe/martini-paginate"
 	"github.com/codegangsta/martini-contrib/render"
 	"github.com/go-martini/martini"
-	"github.com/timothyye/martini-paginate"
-	"github.com/timothyye/vim-tips-web/models"
-	"labix.org/v2/mgo/bson"
+	"github.com/mojo-zd/vim-tips-web/models"
+	"gopkg.in/mgo.v2/bson"
 )
 
 func HandleCasts(r render.Render, pager *paginate.Paginator) {

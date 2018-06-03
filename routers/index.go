@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/codegangsta/martini-contrib/render"
-	"github.com/timothyye/vim-tips-web/models"
+	"github.com/mojo-zd/vim-tips-web/models"
 )
 
 func getRandomIndex(total int) int {

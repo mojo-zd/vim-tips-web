@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 
 	"github.com/codegangsta/martini-contrib/render"
-	"github.com/timothyye/vim-tips-web/models"
-	"labix.org/v2/mgo/bson"
+	"github.com/mojo-zd/vim-tips-web/models"
+	"gopkg.in/mgo.v2/bson"
 )
 
 func HandleAPI(r render.Render) {

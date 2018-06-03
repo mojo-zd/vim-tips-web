@@ -6,10 +6,10 @@ import (
 
 	"github.com/codegangsta/martini-contrib/render"
 	"github.com/martini-contrib/sessions"
-	"github.com/timothyye/vim-tips-web/models"
+	"github.com/mojo-zd/vim-tips-web/models"
 	"golang.org/x/crypto/bcrypt"
-	"labix.org/v2/mgo"
-	"labix.org/v2/mgo/bson"
+	"gopkg.in/mgo.v2"
+	"gopkg.in/mgo.v2/bson"
 )
 
 func validateSession(r render.Render, s sessions.Session) {

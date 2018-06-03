@@ -1,12 +1,13 @@
 package routers
 
 import (
-	"github.com/codegangsta/martini-contrib/render"
-	"github.com/timothyye/martini-paginate"
-	"github.com/timothyye/vim-tips-web/models"
-	"labix.org/v2/mgo"
-	"labix.org/v2/mgo/bson"
 	"net/http"
+
+	paginate "github.com/TimothyYe/martini-paginate"
+	"github.com/codegangsta/martini-contrib/render"
+	"github.com/mojo-zd/vim-tips-web/models"
+	"gopkg.in/mgo.v2"
+	"gopkg.in/mgo.v2/bson"
 )
 
 func AdminShowTips(req *http.Request, r render.Render, db *mgo.Database, pager *paginate.Paginator) {

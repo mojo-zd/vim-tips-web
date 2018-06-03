@@ -2,8 +2,9 @@ package routers
 
 import (
 	"fmt"
-	"labix.org/v2/mgo"
 	"testing"
+
+	"gopkg.in/mgo.v2"
 )
 
 func InitDBConn(t *testing.T) (*mgo.Database, error) {

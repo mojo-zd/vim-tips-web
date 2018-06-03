@@ -1,0 +1,8 @@
+version: '3'
+services:
+  vim-tips-web:
+    environment:
+      - DB_URL=45.77.178.161:27017
+    image: registry.cn-hangzhou.aliyuncs.com/vim-tips/vim-tips-web
+    ports:
+    - 3000:3000

@@ -1,14 +1,15 @@
 package routers
 
 import (
+	"html/template"
+	"net/http"
+
+	"github.com/TimothyYe/martini-paginate"
 	"github.com/codegangsta/martini-contrib/render"
 	"github.com/go-martini/martini"
-	"github.com/timothyye/martini-paginate"
-	"github.com/timothyye/vim-tips-web/models"
-	"html/template"
-	"labix.org/v2/mgo"
-	"labix.org/v2/mgo/bson"
-	"net/http"
+	"github.com/mojo-zd/vim-tips-web/models"
+	"gopkg.in/mgo.v2"
+	"gopkg.in/mgo.v2/bson"
 )
 
 func AdminShowCasts(r render.Render, db *mgo.Database, pager *paginate.Paginator) {

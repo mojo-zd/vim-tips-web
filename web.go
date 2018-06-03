@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
+	"net/http"
+
 	"github.com/dchest/captcha"
 	"github.com/go-martini/martini"
-	"github.com/timothyye/vim-tips-web/routers"
-	"net/http"
+	"github.com/mojo-zd/vim-tips-web/routers"
 )
 
 var (
@@ -21,7 +22,7 @@ func main() {
 
 	fmt.Println("Server started...")
 
-	err := http.ListenAndServe("127.0.0.1:3000", nil)
+	err := http.ListenAndServe(":3000", nil)
 	if err != nil {
 		fmt.Println(err)
 	}

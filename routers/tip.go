@@ -3,8 +3,8 @@ package routers
 import (
 	"github.com/codegangsta/martini-contrib/render"
 	"github.com/go-martini/martini"
-	"github.com/timothyye/vim-tips-web/models"
-	"labix.org/v2/mgo/bson"
+	"github.com/mojo-zd/vim-tips-web/models"
+	"gopkg.in/mgo.v2/bson"
 )
 
 func HandleTip(r render.Render, params martini.Params) {

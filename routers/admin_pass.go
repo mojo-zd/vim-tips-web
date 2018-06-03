@@ -1,12 +1,13 @@
 package routers
 
 import (
-	"code.google.com/p/go.crypto/bcrypt"
+	"net/http"
+
 	"github.com/codegangsta/martini-contrib/render"
 	"github.com/martini-contrib/sessions"
-	"labix.org/v2/mgo"
-	"labix.org/v2/mgo/bson"
-	"net/http"
+	"golang.org/x/crypto/bcrypt"
+	"gopkg.in/mgo.v2"
+	"gopkg.in/mgo.v2/bson"
 )
 
 func AdminPassword(r render.Render, s sessions.Session) {
